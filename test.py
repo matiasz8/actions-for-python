@@ -9,6 +9,9 @@ class Test_modules(TestCase):
     def test_sum(self):
         self.assertEqual(main.sum(5, 7), 12)
 
+    def test_phase(self):
+        self.assertEqual(main.phase("a", "b"), "ab")
+
 
 if __name__ == "__main__":
     main()
